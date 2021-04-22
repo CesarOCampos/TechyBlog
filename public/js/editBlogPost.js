@@ -52,10 +52,6 @@ const delButtonHandler = async(event) => {
     }
 };
 
-document
-    .querySelector(".edit-blogpost-form")
-    .addEventListener("submit", editFormHandler);
+document.querySelector(".edit-blogpost-form").addEventListener("submit", editFormHandler);
 
-document
-    .querySelector("#delete-post")
-    .addEventListener("click", delButtonHandler);
+document.querySelector("#delete-post").addEventListener("click", delButtonHandler);
