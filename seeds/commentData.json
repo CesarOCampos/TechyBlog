@@ -1,4 +1,5 @@
 [{
-    "comment_content": "This is very fun but coding its difficult."
-
+    "comment_content": "This is very fun but coding its difficult.",
+    "blog_id": 1,
+    "author_id": 1
 }]
