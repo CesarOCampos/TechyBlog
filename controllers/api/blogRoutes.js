@@ -6,7 +6,7 @@ const withAuth = require("../../utils/auth");
 
 router.get("/", withAuth, async(req, res) => {
     // If the user is logged in, render the create blog page
-    res.render("createblogpost", { logged_in: true });
+    res.render("createBlogPost", { logged_in: true });
     return;
 });
 
