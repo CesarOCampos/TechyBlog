@@ -1,15 +1,13 @@
 const router = require("express").Router();
 const { Author } = require("../../models");
 
-// CREATE New Author on Signup:
+// create new author
 router.post("/", async(req, res) => {
     try {
         const authorData = await Author.create(req.body);
-
         req.session.save(() => {
             req.session.user_id = authorData.id;
             req.session.logged_in = true;
-
             res.status(200).json(authorData);
         });
     } catch (err) {
@@ -38,7 +36,6 @@ router.post("/login", async(req, res) => {
         req.session.save(() => {
             req.session.user_id = authorData.id;
             req.session.logged_in = true;
-
             res.json({ author: authorData, message: "You are now logged in!" });
         });
     } catch (err) {
