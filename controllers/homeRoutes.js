@@ -45,7 +45,7 @@ router.get("/blog/:id", async(req, res) => {
         // Serialize data for handlebars template
         const blog = blogPostData.get({ plain: true });
 
-        res.render("blogpost", {
+        res.render("blogPost", {
             ...blog,
             logged_in: req.session.logged_in,
         });

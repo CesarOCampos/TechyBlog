@@ -44,7 +44,7 @@ router.get("/edit/:id", withAuth, async(req, res) => {
         // Serialize data for handlebars template
         const blog = blogPostData.get({ plain: true });
 
-        res.render("editblogpost", {
+        res.render("editBlogPost", {
             ...blog,
             logged_in: req.session.logged_in,
         });
