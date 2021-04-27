@@ -3,8 +3,7 @@ const { BlogPost, Author, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async(req, res) => {
-    try {
-        // Get all blog posts and JOIN with author data
+    try { // Get all blog posts and JOIN with author data
         const blogPostData = await BlogPost.findAll({
             include: [{
                 model: Author,

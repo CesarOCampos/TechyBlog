@@ -10,7 +10,7 @@
 6. [Usage Information](#usage-information)
 7. [Contributor Guidelines](#contributor-guidelines)
 8. [Mock Up](#mock-up)
-9. [Video Link](#video-link)
+9. [Live Link](#live-link)
 10. [License](#license)
 11. [Questions](#questions)
 
@@ -74,7 +74,7 @@ THEN I am automatically signed out of the site
     * N/A
 
 ## Usage Information
-    * Information to be known by user when using the repo.
+    * N/A
 
 ## Contributor Guidlines
 
@@ -82,11 +82,14 @@ THEN I am automatically signed out of the site
 
 ## Mock-Up
 
-https://bloggytech.herokuapp.com/
-
 ![Screenshot_1](https://user-images.githubusercontent.com/40922162/115655679-63cf0480-a2f9-11eb-964c-299eea2d95c4.png)
 
+## Live Link
+
+https://bloggytech.herokuapp.com/
+
 ## License 
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) This project is licensed under the [MIT](https://opensource.org/licenses/MIT) license.
     
 ## Questions
