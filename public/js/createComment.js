@@ -1,6 +1,5 @@
 const newCommentHandler = async(event) => {
     event.preventDefault();
-
     const id = document.querySelector("#blogpost-id").value.trim();
     const content = document.querySelector("#comment-content").value.trim();
 
@@ -13,11 +12,7 @@ const newCommentHandler = async(event) => {
             },
         });
 
-        if (response.ok) {
-            document.location.replace(`/blog/${id}`);
-        } else {
-            alert("Failed to create comment");
-        }
+        (response.ok) ? document.location.replace(`/blog/${id}`): alert("Failed to create comment");
     }
 };
 

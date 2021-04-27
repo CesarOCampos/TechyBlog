@@ -3,7 +3,6 @@
   <h2></h2>
   <p>Authored by: {{author.name}} on {{format_date date_created}}</p>
   <p>{{blog_content}}</p>
-
   <h2>Comments:</h2>
   <ul>
     {{#each comments as |comment| }}
@@ -13,7 +12,6 @@
     </li>
     {{/each}}
   </ul>
-
   <h3>Add New Comment:</h3>
   <form class="form new-comment-form">
     <div class="form-group">
@@ -26,5 +24,4 @@
     </div>
   </form>
 </div>
-
 <script src="/js/createComment.js"></script>

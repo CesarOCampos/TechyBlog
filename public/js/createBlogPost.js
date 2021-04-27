@@ -1,6 +1,5 @@
 const newFormHandler = async(event) => {
     event.preventDefault();
-
     const title = document.querySelector("#blogpost-title").value.trim();
     const content = document.querySelector("#blogpost-content").value.trim();
 
@@ -16,11 +15,7 @@ const newFormHandler = async(event) => {
             },
         });
 
-        if (response.ok) {
-            document.location.replace("/dashboard");
-        } else {
-            alert("Failed to create blog post");
-        }
+        (response.ok) ? document.location.replace("/dashboard"): alert("Failed to create blog post");
     }
 };
 

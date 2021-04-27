@@ -14,8 +14,8 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-    secret: 'when does pi end',
-    cookie: {},
+    secret: "when does pi end",
+    cookie: { expires: 15 * 60 * 1000 }, //session expires in 15 minutes
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
